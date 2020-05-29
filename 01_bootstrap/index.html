@@ -3,9 +3,537 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Introducing The App!">
+    <meta name="keywords" content="app, mobile, tablet, laptop, innovation">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+    <title>The App | Welcome</title>
 </head>
-<body>
-    
+<body id="home" data-spy="scroll" data-target="#main-nav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top py-3" id="main-nav">
+        <div class="container">
+            <a href="#home" class="navbar-brand"><i class="fas fa-mobile-alt"></i> The App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navItems">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#what-is-the-app" class="nav-link">What is The App?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="showcase">
+        <div class="carousel slide carousel-fade" id="carouselShowcase" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(min-width: 991px)" srcset="./img/home-showcase-1-md.jpg">
+                        <source media="(min-width: 575px)" srcset="./img/home-showcase-1-sm.jpg">
+                        <img src="./img/home-showcase-1-lg.jpg" alt="" class="w-100 cover">
+                    </picture>
+                    <div class="carousel-caption d-none d-md-block w-50 m-auto">
+                        <div class="card bg-light text-dark">
+                            <div class="card-body">
+                                <h3 class="card-title">Introducing The App</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, architecto?</p>
+                                <a href="#what-is-the-app" class="btn btn-info btn-lg">Learn More <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width: 991px)" srcset="./img/home-showcase-2-md.jpg">
+                        <source media="(min-width: 575px)" srcset="./img/home-showcase-2-sm.jpg">
+                        <img src="./img/home-showcase-2-lg.jpg" alt="" class="w-100 cover">
+                    </picture>
+                    <div class="carousel-caption d-none d-md-block w-50 m-auto">
+                        <div class="card bg-light text-dark">
+                            <div class="card-body">
+                                <h3 class="card-title">Discover Key Benefits</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, architecto?</p>
+                                <a href="#benefits" class="btn btn-info btn-lg">Learn More <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width: 991px)" srcset="./img/home-showcase-3-md.jpg">
+                        <source media="(min-width: 575px)" srcset="./img/home-showcase-3-sm.jpg">
+                        <img src="./img/home-showcase-3-lg.jpg" alt="" class="w-100 cover">
+                    </picture>
+                    <div class="carousel-caption d-none d-md-block w-50 m-auto">
+                        <div class="card bg-light text-dark">
+                            <div class="card-body">
+                                <h3 class="card-title">Try Out For Free</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, architecto?</p>
+                                <a href="#pricing" class="btn btn-info btn-lg">Learn More <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselShowcase" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselShowcase" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section id="what-is-the-app" class="py-5 position-relative overflow-hidden">
+        <div class="container position-relative">
+            <div class="row py-5">
+                <div class="col-md-10 on-top">
+                    <h1 class="display-4">What is The App?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, fuga impedit consequatur totam ex libero officiis eaque quidem odio inventore esse reprehenderit delectus quia sapiente molestiae rem! Iste asperiores nulla, at id iure sapiente in quisquam quidem quia. Fugit accusantium quos necessitatibus repellat quas doloremque saepe voluptatem temporibus cupiditate exercitationem.</p>
+                    <a href="#" class="btn btn-dark">Download Free Trial</a>
+                </div>
+            </div>
+            <picture>
+                <source media="(min-width: 767px)" srcset="./img/what-is-the-app-1-sm.jpg">
+                <img src="./img/what-is-the-app-1-md.jpg" alt=""
+                    class="rounded-circle position-absolute shadow-lg cover img-custom-size d-none d-md-block">
+            </picture>
+        </div>
+    </section>
+    <section id="what-is-the-app-follow-up" class="py-5 bg-light position-relative overflow-hidden d-none d-md-block">
+        <div class="container position-relative">
+            <div class="row flex-row-reverse py-5">
+                <div class="col-md-8 on-top">
+                    <h1 class="display-4">Device Compatibility and Responsiveness</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi fugiat magni eius harum unde
+                        cumque optio rerum aliquid quaerat animi nam illo temporibus explicabo labore qui, ipsum earum
+                        dolore?</p>
+                    <a href="#benefits" class="btn btn-info">Learn More <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <picture>
+                    <source media="(min-width: 767px)" srcset="./img/features-4-sm.jpg">
+                    <img src="./img/features-4-md.jpg" alt=""
+                        class="rounded-circle position-absolute shadow-lg cover img-custom-size d-none d-md-block">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="py-5 text-center overflow-hidden">
+        <div class="container position-relative py-5">
+            <h2 class="display-4 mb-4">Enjoy High Quality Product</h2>
+            <p class="lead mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto ad, ex itaque
+                fuga alias?</p>
+            <a href="#" class="btn btn-light btn-lg rounded align-baseline shadow-lg" data-toggle="modal"
+                data-target="#livedemoModal">Live Demo <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+    <section id="features-follow-up" class="py-5 text-center bg-light position-relative overflow-hidden d-none d-md-block">
+        <div class="container position-relative py-5 on-top">
+            <h1 class="display-4 mb-4">Key Features</h1>
+            <p class="lead mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, explicabo!</p>
+            <div class="row justify-content-start">
+                <div class="col-sm-3 d-flex flex-column my-3">
+                    <i class="fas fa-globe fa-4x mb-3 text-primary"></i>
+                    <p class="font-weight-bolder">Global</p>
+                </div>
+                <div class="col-sm-3 d-flex flex-column my-3">
+                    <i class="fas fa-user-shield fa-4x mb-3 text-secondary"></i>
+                    <p class="font-weight-bolder">Safe</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 d-flex flex-column my-3">
+                    <i class="fas fa-bolt fa-4x mb-3 text-info"></i>
+                    <p class="font-weight-bolder">
+                        Fast
+                    </p>
+                </div>
+                <div class="col-sm-3 d-flex flex-column my-3">
+                    <i class="fas fa-check-circle fa-4x mb-3 text-primary"></i>
+                    <p class="font-weight-bolder">
+                        Reliable
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-sm-3 d-flex flex-column my-3">
+                    <i class="fas fa-cloud-upload-alt fa-4x mb-3 text-secondary"></i>
+                    <p class="font-weight-bolder">
+                        Cloud
+                    </p>
+                </div>
+                <div class="col-sm-3 d-flex flex-column my-3">
+                    <i class="fas fa-edit fa-4x mb-3 text-info"></i>
+                    <p class="font-weight-bolder">
+                        Customized
+                    </p>
+                </div>
+            </div>
+        </div>
+        <picture>
+            <source media="(min-width: 767px)" srcset="./img/features-1-sm.jpg">
+            <img src="./img/features-1-md.jpg" alt=""
+                class="img-fluid rounded-circle position-absolute shadow-lg cover img-custom-size" id="photo-1">
+        </picture>
+        <picture>
+            <source media="(min-width: 767px)" srcset="./img/features-3-sm.jpg">
+            <img src="./img/features-3-md.jpg" alt=""
+                class="img-fluid rounded-circle position-absolute shadow-lg cover img-custom-size" id="photo-2">
+        </picture>
+    </section>
+    <section id="benefits" class="my-5 py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-3">
+                    <p class="lead mb-5">3 reasons our App can help to grow your business</p>
+                    <div class="nav flex-column nav-tabs nav-justified" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-item nav-link active position-relative border-right-0 rounded-0" id="v-pills-home-tab" data-toggle="tab" href="#v-pills-home" role="tab"
+                            aria-controls="v-pills-home" aria-selected="true">Key Benefits</a>
+                        <a class="nav-item nav-link position-relative" id="v-pills-profile-tab" data-toggle="tab" href="#v-pills-profile" role="tab"
+                            aria-controls="v-pills-profile" aria-selected="false">User-Friendly</a>
+                        <a class="nav-item nav-link position-relative" id="v-pills-messages-tab" data-toggle="tab" href="#v-pills-messages" role="tab"
+                            aria-controls="v-pills-messages" aria-selected="false">Compatibility</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 mb-5">
+                                    <i class="fas fa-hands-helping fa-4x mb-3 text-primary"></i>
+                                    <h4 class="h4 text-muted">
+                                        Extra Support
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur ducimus a ex aut repellat!
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="col-sm-6 mb-5">
+                                    <i class="fas fa-layer-group fa-4x mb-3 text-secondary"></i>
+                                    <h4 class="h4 text-muted">
+                                        Scalable Features
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur ducimus a ex aut repellat!
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 mb-5">
+                                    <i class="fas fa-database fa-4x mb-3 text-info"></i>
+                                    <h4 class="h4 text-muted">
+                                        Additional Storage
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur ducimus a ex aut repellat!
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="col-sm-6 mb-5">
+                                    <i class="fas fa-rocket fa-4x mb-3 text-primary"></i>
+                                    <h4 class="h4 text-muted">
+                                        Unlimited Power
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur ducimus a ex aut repellat!
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="row justify-content-center mb-5">
+                                <div class="col mb-5">
+                                    <picture>
+                                        <source media="(min-width: 767px)" srcset="./img/benefits-1-sm.jpg">
+                                        <img src="./img/benefits-1-md.jpg" alt="" class="img-fluid cover h-50 w-75">
+                                    </picture>
+                                    <h4 class="h4 text-muted my-4">
+                                        Ease of Use
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero minus quia? Reprehenderit, ullam repudiandae. Iusto sed labore animi fugiat perferendis alias. At, et dolor quia quod facilis quibusdam hic. Nulla, deserunt! Blanditiis provident autem, nemo consectetur ut id aut dolores. Nisi harum porro pariatur exercitationem distinctio, voluptatum error voluptate deleniti? Vitae animi, inventore nostrum nesciunt accusamus explicabo omnis dicta.
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 mb-5">
+                                    <i class="fab fa-windows fa-4x mb-3 text-primary"></i>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit asperiores enim eius soluta delectus. Aperiam enim iste dolor fugit architecto debitis ipsam in accusamus officia.
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="col-sm-6 mb-5">
+                                    <i class="fab fa-apple fa-4x mb-3 text-secondary"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repellat molestiae numquam voluptatibus. Fugiat, porro quisquam doloremque obcaecati saepe minus facere aut enim voluptate sint.
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 mb-5">
+                                    <i class="fab fa-android fa-4x mb-3 text-info"></i>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nulla dignissimos adipisci alias eum neque voluptas unde officiis tenetur vitae, ab quia, ex similique quas.
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="col-sm-6 mb-5">
+                                    <i class="fab fa-linux fa-4x mb-3 text-primary"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum sequi beatae inventore aliquam tempora sint, iste, quisquam libero cumque quam praesentium natus, nesciunt ea non?
+                                    </p>
+                                    <a href="#" class="btn btn-dark">Learn More <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="py-5 bg-light text-center position-relative overflow-hidden">
+        <div class="container position-relative py-5 on-top">
+            <h1 class="display-4 mb-4">Pricing Plans</h1>
+            <p class="lead mb-5">No extra costs. Pay for what you use.</p>
+            <div class="row justify-content-center py-5">
+                <div class="col-sm-6 col-lg-4 order-2 order-lg-1 pt-3">
+                    <div class="card text-left">
+                        <div class="card-header text-muted">
+                            Start
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title h4">
+                                Free
+                            </h4>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark d-block btn-lg">Start Free Trial</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-lg-4 order-1 order-lg-2">
+                    <div class="card text-left bg-success text-white">
+                        <div class="card-header text-white d-flex align-items-center">
+                            Premium <span class="badge badge-pill badge-light ml-auto">Recommended</span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title h4">
+                                $29 <small class="text-white">/ month</small>
+                            </h4>
+                        </div>
+                        <ul class="list-group list-group-flush bg-success">
+                            <li class="list-group-item bg-success">Cras justo odio</li>
+                            <li class="list-group-item bg-success">Dapibus ac facilisis in</li>
+                            <li class="list-group-item bg-success">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-light d-block btn-lg">Choose Premium</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 order-3 order-lg-3 pt-3">
+                    <div class="card text-left">
+                        <div class="card-header text-muted">
+                            Enterprise
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title h4">
+                                Team
+                            </h4>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark d-block btn-lg">See Team Options</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end question">
+                <p class="text-muted">Have a question? <a href="#" class="text-info mr-3" data-toggle="modal" data-target="#contactModal">Contact Us.</a></p>
+            </div>
+        </div>
+        <hr class="w-50 my-5">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-sm-6 mt-5">
+                    <img src="./img/testimonial-1-sm.jpg" alt="" class="img-fluid rounded-circle cover">
+                    <h5 class="h5 mt-3">Samantha Smith</h5>
+                    <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eius et eligendi fugit id libero illum, adipisci voluptatem cupiditate ut.</p>
+                </div>
+                <div class="col-sm-6 mt-5">
+                    <img src="./img/testimonial-2-sm.jpg" alt="" class="img-fluid rounded-circle cover">
+                    <h5 class="h5 mt-3">Jason Walken</h5>
+                    <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eius et eligendi fugit id
+                        libero illum, adipisci voluptatem cupiditate ut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="get-started" class="py-5 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="h2 mb-4">Get Started with The App</h2>
+                    <p class="lead m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, explicabo!</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <a href="#pricing" class="btn btn-primary btn-lg mr-5 d-inline-block m-auto">Start Free Trial</a>
+                    <a href="#benefits" class="btn btn-info btn-lg d-none d-sm-inline-block m-auto">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-center justify-content-center my-3 order-3 order-lg-1">
+                    <p class="m-0">All Rights Reserved. &copy; 2020. The App</p>
+                </div>
+                <div class="col-lg-4 text-center my-3 order-1 order-lg-2">
+                    <a href="#" class="btn btn-info btn-lg rounded-0" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-around my-3 order-2 order-lg-3">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github fa-3x text-white"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-twitter fa-3x text-white"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Demo Modal -->
+    <div class="modal fade" id="livedemoModal" tabindex="-1" role="dialog" aria-labelledby="livedemoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="livedemoModalLabel">Live Demo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" height="300"
+                            src="https://www.youtube-nocookie.com/embed/QOXup8chEoY?start=1" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Get In Touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="user-addon"><i class="far fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+                                    aria-describedby="user-addon">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="email-addon"><i class="fas fa-at"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email-addon">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="message-addon"><i class="fas fa-pencil-alt"></i></span>
+                                </div>
+                                <textarea class="form-control" placeholder="Message..." aria-label="Message..." aria-describedby="message-addon"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script>
+        // Init Scrollspy
+        $('body').scrollspy({ target: '#main-nav' });
+
+        // Smooth Scrolling
+        $("#main-nav a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    window.location.hash = hash;
+                });
+            }
+        });
+    </script>
 </body>
 </html>
